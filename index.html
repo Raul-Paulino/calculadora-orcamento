@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de Doces - Flor de Liz</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚜️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Superior de Abas -->
+        <nav class="menu-abas">
+            <a href="index.html" class="aba ativa">🧁 Doces</a>
+            <a href="bolos.html" class="aba">🎂 Bolos</a>
+            <a href="salgados.html" class="aba">🥟 Salgados</a>
+        </nav>
+
+        <h1>Flor de Liz ⚜️</h1>
+        <p class="subtitulo">Calculadora de Orçamento - Doces</p>
+
+        <!-- Dados do Cliente -->
+        <div class="secao-cliente">
+            <div class="campo-cliente">
+                <label for="nomeCliente">Nome do Cliente:</label>
+                <input type="text" id="nomeCliente" placeholder="Ex: Maria Silva" oninput="salvarDadosDigitados()">
+            </div>
+            <div class="campo-cliente">
+                <label for="dataEvento">Data do Evento:</label>
+                <input type="date" id="dataEvento" onchange="salvarDadosDigitados()">
+            </div>
+        </div>
+
+        <div id="listaProdutos"></div>
+
+        <button type="button" onclick="calcularOrcamentoGeral()">Calcular Orçamento Completo</button>
+
+        <div id="resultado" class="resultado hidden">
+            <h2 id="cabecalhoResultado">Resumo do Orçamento</h2>
+            <div id="itensSelecionados"></div>
+            <div class="total-geral">
+                <strong>Total Geral: R$ <span id="valorTotalGeral">0.00</span></strong>
+            </div>
+            <button type="button" id="btnCopiar" class="btn-whatsapp" onclick="copiarMensagemWhatsApp()">
+                📋 Copiar Mensagem p/ WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>carregarSecao('doces');</script>
+</body>
+</html>
