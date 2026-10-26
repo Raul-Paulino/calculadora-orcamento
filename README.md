@@ -29,7 +29,7 @@ Este projeto foi construído do zero utilizando as tecnologias fundamentais do d
 ## 📱 Demonstração / Acesso Online
 
 Você pode acessar o sistema em funcionamento através do link do GitHub Pages:
-🔗 [Clique aqui para acessar o projeto](https://raul-paulino.github.io/calculadora-orcamento/) *(substitua pelo seu link do Pages)*
+🔗 [Clique aqui para acessar o projeto] https://raul-paulino.github.io/calculadora-orcamento/
 
 ---
 
